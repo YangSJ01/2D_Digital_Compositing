@@ -10,7 +10,7 @@
 > ### RGBA
 * RGBA는 빨간색, 녹색, 파란색, 알파를 뜻하며, RGB에 알파채널이 추가된 형태이다.
     알파영역을 통해 투명/불투명 정보를 추가해 이미지의 결합을 가능하게 만들었다.
->    > #### alpha chenal
+>    > #### alpha Channel
 * 색상의 투명도/불투명도를 제어한다.
         소스 색상의 알파값을 이용해 다른 색상과 혼합될 떄의 결과 색상을 결정한다.
         투명하면 다른 색상(배경)이 보이고, 불투명하면 소스 색상이 보인다. 값이 그 사이에 있다면 반투명 효과를 볼 수 있다.
@@ -21,10 +21,10 @@
 * 색영역(Gamut)은 원본의 색상을 화면에서 어느정도 표헌할 수 있는지를 수치화한 것이다. 디스플레이에서 표현 가능한 색상의 범위를 뜻한다.
 --------------------------------------------------------------------------------------
 > ##### 출처
-[Google](https://ko.wikipedia.org/wiki/CMYK)
-[Google](https://ko.wikipedia.org/wiki/RGB#RGB_%EC%B1%84%EB%84%90)
-[Google](https://en.wikipedia.org/wiki/RGBA_color_model)
-[Google](https://www.techopedia.com/definition/1945/alpha-channel)
-[Google](https://www.khanacademy.org/computing/pixar/color/color-space/v/color6-final)
-[Google](https://en.wikipedia.org/wiki/Gamut)
-[Google](http://snq.co.kr/guides/basic/index4.php]
+[CMYK](https://ko.wikipedia.org/wiki/CMYK)
+[RGB](https://ko.wikipedia.org/wiki/RGB#RGB_%EC%B1%84%EB%84%90)
+[RGBA](https://en.wikipedia.org/wiki/RGBA_color_model)
+[Alpha Channel](https://www.techopedia.com/definition/1945/alpha-channel)
+[Color space](https://www.khanacademy.org/computing/pixar/color/color-space/v/color6-final)
+[Gamut](https://en.wikipedia.org/wiki/Gamut)
+[cmyk&rgb](http://snq.co.kr/guides/basic/index4.php])
