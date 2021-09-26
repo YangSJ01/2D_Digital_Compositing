@@ -1,6 +1,6 @@
 # 2D디지털합성 - week2
 > ### CMYK, RGB
-    * CMYK
+    + CMYK
     = Cyan Magenta Yellow Key(Black). 마젠타, 시안, 노랑, 검정을 원색으로한 감산혼합의 색 모형이다. RGB나 HSB보다 표현 가능한 색이 적다.(ex. 보라색)
     주로 인쇄에서 사용된다.
     *RGB
