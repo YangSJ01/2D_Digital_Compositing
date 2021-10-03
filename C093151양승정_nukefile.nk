@@ -1,0 +1,270 @@
+#! C:/Program Files/Nuke13.0v5/nuke-13.0.5.dll -nx
+#write_info Write1 file:"C:/Users/user/Desktop/2d digital composition/wee3/hong1.png" format:"1200 800 1" chans:":rgba.red:rgba.green:rgba.blue:rgba.alpha:" framerange:"1 100" fps:"0" colorspace:"sRGB" datatype:"8 bit" transfer:"unknown" views:"main" colorManagement:"Nuke"
+version 13.0 v5
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="0" y="0" w="1917" h="1008" screen="0">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="1254" stretch="1"/>
+            <splitter orientation="2">
+                <split size="567"/>
+                <dock id="" activePageId="Viewer.2" focus="true">
+                    <page id="Viewer.2"/>
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="399"/>
+                <dock id="" activePageId="DAG.1">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                </dock>
+            </splitter>
+            <split size="615"/>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"/>
+                <page id="uk.co.thefoundry.backgroundrenderview.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name "C:/Users/user/Desktop/2d digital composition/nuke.nk"
+ format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ colorManagement Nuke
+ workingSpaceLUT linear
+ monitorLut sRGB
+ monitorOutLUT rec709
+ int8Lut sRGB
+ int16Lut sRGB
+ logLut Cineon
+ floatLut linear
+}
+ColorBars {
+ inputs 0
+ name ColorBars1
+ xpos -115
+ ypos -148
+}
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard1
+ xpos -4
+ ypos -134
+}
+ColorWheel {
+ inputs 0
+ gamma 0.45
+ name ColorWheel1
+ xpos -229
+ ypos -148
+}
+CurveTool {
+ ROI {0 0 2048 1556}
+ autocropdata {512 389 1536 1167}
+ intensitydata {{curve}}
+ name CurveTool1
+ xpos -229
+ ypos -66
+}
+Constant {
+ inputs 0
+ channels rgb
+ name Constant1
+ xpos 89
+ ypos -204
+}
+Read {
+ inputs 0
+ file_type png
+ file "C:/Users/user/Desktop/2d digital composition/wee3/grumpy-cat-blue-eyes_5f45676488142.png"
+ format "1720 1720 0 0 1720 1720 1 "
+ origset true
+ name Read3
+ xpos 42
+ ypos -47
+}
+Read {
+ inputs 0
+ file_type png
+ file "C:/Users/user/Desktop/2d digital composition/wee3/다운로드.png"
+ format "366 271 0 0 366 271 1 "
+ origset true
+ name Read2
+ xpos -56
+ ypos 31
+}
+Read {
+ inputs 0
+ file_type png
+ file "C:/Users/user/Desktop/2d digital composition/wee3/dog.png"
+ format "410 410 0 0 410 410 1 "
+ origset true
+ name Read4
+ xpos 21
+ ypos 81
+}
+Read {
+ inputs 0
+ file_type png
+ file "C:/Users/user/Desktop/2d digital composition/wee3/99AB1D505D15071005.png"
+ format "390 348 0 0 390 348 1 "
+ origset true
+ name Read7
+ xpos 331
+ ypos -115
+}
+Grade {
+ white {0.74 0.66 0.82 1}
+ white_panelDropped true
+ name Grade1
+ xpos 331
+ ypos -10
+}
+Unpremult {
+ alpha -rgba.alpha
+ name Unpremult1
+ xpos 331
+ ypos 20
+}
+Roto {
+ output alpha
+ curves {{{v x3f99999a}
+  {f 0}
+  {n
+   {layer Root
+    {f 2097152}
+    {t x44800000 x44428000}
+    {a pt1x 0 pt1y 0 pt2x 0 pt2y 0 pt3x 0 pt3y 0 pt4x 0 pt4y 0 ptex00 0 ptex01 0 ptex02 0 ptex03 0 ptex10 0 ptex11 0 ptex12 0 ptex13 0 ptex20 0 ptex21 0 ptex22 0 ptex23 0 ptex30 0 ptex31 0 ptex32 0 ptex33 0 ptof1x 0 ptof1y 0 ptof2x 0 ptof2y 0 ptof3x 0 ptof3y 0 ptof4x 0 ptof4y 0 pterr 0 ptrefset 0 ptmot x40800000 ptref 0}
+    {curvegroup Bezier1 512 bezier
+     {{cc
+       {f 8192}
+       {px 1
+        {0 0}
+        {x42be0000 x42fc0000}
+        {0 0}
+        {0 0}
+        {x42ca0000 x42d80000}
+        {0 0}
+        {0 0}
+        {x42fc0000 x42a80000}
+        {0 0}
+        {0 0}
+        {x431a0000 x42800000}
+        {0 0}
+        {0 0}
+        {x433f0000 x42200000}
+        {0 0}
+        {0 0}
+        {x435d0000 x42380000}
+        {0 0}
+        {0 0}
+        {x437e0000 x42540000}
+        {0 0}
+        {0 0}
+        {x438a0000 x42580000}
+        {0 0}
+        {0 0}
+        {x439b0000 x423c0000}
+        {0 0}
+        {0 0}
+        {x43a40000 xc1e80000}
+        {0 0}
+        {0 0}
+        {x431a0000 xc1e80000}
+        {0 0}
+        {0 0}
+        {xc1200000 xc1e00000}
+        {0 0}
+        {0 xc0000000}
+        {xc1500000 x42300000}
+        {0 x40000000}}}     idem}
+     {tx 1 x43283b14 x42327627}
+     {a a 0 osw x41200000 osf 0 str 1 spx x44800000 spy x44428000 sb 1 tt x40800000}}}}}}
+ toolbox {selectAll {
+  { selectAll str 1 ssx 1 ssy 1 sf 1 }
+  { createBezier a 0 str 1 ssx 1 ssy 1 sf 1 sb 1 tt 4 }
+  { createBezierCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createBSpline str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createEllipse str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangle str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { createRectangleCusped str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { brush str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { eraser src 2 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { clone src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { reveal src 3 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { dodge src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { burn src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { blur src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { sharpen src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+  { smear src 1 str 1 ssx 1 ssy 1 sf 1 sb 1 }
+} }
+ toolbar_paint_color {1 1 1 0}
+ toolbar_brush_hardness 0.200000003
+ toolbar_source_transform_scale {1 1}
+ toolbar_source_transform_center {1024 778}
+ color {1 1 1 0}
+ colorOverlay {0 0 0 0}
+ lifetime_type "all frames"
+ motionblur_shutter_offset_type centred
+ source_black_outside true
+ name Roto1
+ xpos 338
+ ypos 42
+}
+Premult {
+ name Premult1
+ xpos 351
+ ypos 83
+}
+Transform {
+ translate {400 190}
+ center {1024 778}
+ name Transform1
+ xpos 351
+ ypos 113
+}
+Read {
+ inputs 0
+ file_type jpeg
+ file "C:/Users/user/Desktop/2d digital composition/wee3/image1_road.jpg"
+ format "1200 800 0 0 1200 800 1 "
+ origset true
+ name Read1
+ xpos 511
+ ypos 3
+}
+Merge2 {
+ inputs 2
+ name Merge1
+ xpos 364
+ ypos 152
+}
+Write {
+ channels rgba
+ file "C:/Users/user/Desktop/2d digital composition/wee3/hong1.png"
+ colorspace sRGB
+ file_type png
+ create_directories true
+ checkHashOnRead false
+ version 6
+ name Write1
+ xpos 494
+ ypos 178
+}
+Viewer {
+ frame_range 1-100
+ colour_sample_bbox {-0.6150000095 -0.6266666651 -0.6133333445 -0.625}
+ samplepoints {{-0.5566666722 -0.6050000191}
+   }
+ name Viewer2
+ xpos 619
+ ypos 128
+}
