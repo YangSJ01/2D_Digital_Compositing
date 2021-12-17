@@ -12,4 +12,5 @@
 * z축의 정확도를 높이기 위해 추가 추적 데이터와 함께 2point tracking의 장점 포함되어있음.
 > ### 4 point tracking
 * 4개의 트랙과 CornerPin2D 노드를 사용하여 추적하는 기능의 점으로 다른 요소를 왜곡하고 일치 이동시킬 수 있음.
+* 
 [참고2](https://learn.foundry.com/nuke/content/tutorials/written_tutorials/tutorial2/1_2_3_4_point_tracks.html)
